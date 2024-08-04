@@ -25,7 +25,7 @@ const Socials = () => {
         <FaLinkedin /> {/* LinkedIn Icon */}
       </Link>
 
-      <Link href={""} className="hover:text-accent transition-all duration-300">
+      <Link href={"https://www.instagram.com/pankaj_korkalai/"} className="hover:text-accent transition-all duration-300">
         <FaInstagram /> {/* Instagram Icon */}
       </Link>
 
