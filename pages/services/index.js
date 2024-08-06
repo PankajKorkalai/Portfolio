@@ -26,7 +26,7 @@ const Services = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="mb-4 max-w-[400px] mx-auto lg:mx-0 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        className="mb-4 max-w-[400px] mx-auto lg:mx-0 ">Offering a range of services including branding, design, development, marketing, and SEO. Our goal is to elevate your brand and drive success through tailored solutions and innovative strategies.
             </motion.p>
         </div>
           {/* slider */}

@@ -125,7 +125,7 @@ const About = () => {
             animate="show"
             exit="hidden"
             className="'max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
-            Currently I am in 2nd year and pursuing btech in Computer Science and Engineering with specilization in Data Science. I am proficient MERN Stack and still mastering it.
+            Currently, I am in my 2nd year, pursuing a B.Tech in Computer Science and Engineering with a specialization in Data Science. I am proficient in MERN Stack and continuously honing my skills in modern web development technologies.
           </motion.p>
           {/* counters */}
           <motion.div variants={fadeIn('right', 0.6)}

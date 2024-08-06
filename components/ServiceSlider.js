@@ -1,12 +1,7 @@
-// import swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// import swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-
-// icons
 import {
   RxCrop,
   RxPencil2,
@@ -15,36 +10,33 @@ import {
   RxRocket,
   RxArrowTopRight,
 } from "react-icons/rx";
-
-// import required modules
 import { FreeMode, Pagination } from 'swiper';
 
-// data
 const serviceData = [
   {
     icon: <RxCrop />,
     title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Crafting memorable brands with strong visual identities and strategies.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Creating engaging and user-friendly designs for web and mobile.',
   },
   {
     icon: <RxDesktop />,
     title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Building robust web and mobile applications tailored to your needs.',
   },
   {
     icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Marketing',
+    description: 'Delivering compelling content that captures your brand’s voice and engages audiences.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Enhancing your website’s visibility and driving organic traffic with effective SEO strategies.',
   },
 ];
 
@@ -71,13 +63,13 @@ const ServiceSlider = () => {
       {serviceData.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className='bg-[rgba(65,47,123,0.15)] h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
+            <div className='bg-[rgba(65,47,123,0.15)] h-[100%] rounded-lg px-6 py-8 flex flex-col justify-between group cursor-pointer hover:bg-[rgba(89,65,169,0.15)] transition-all duration-300'>
               {/* icons */}
-              <div className='text-4xl text-accent mb-4'>{item.icon}</div>
+              <div className='text-4xl text-accent mb-4 flex-shrink-0'>{item.icon}</div>
               {/* title & desc*/}
-              <div className='mb-8'>
+              <div className='flex-1'>
                 <div className='mb-2 text-lg'>{item.title}</div>
-                <p className='max-w-[350px] leading-normal'>{item.description}</p>
+                <p className='leading-normal'>{item.description}</p>
               </div>
               {/* arrow */}
               <div className='text-3xl'>
