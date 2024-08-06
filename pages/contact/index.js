@@ -1,18 +1,11 @@
-// components
-import Circles from "/components/Circles";
-
-// icons
-import { BsArrowRight } from "react-icons/bs";
-
-// framer
+import { useState } from "react";
+import axios from "axios";
 import { motion } from "framer-motion";
-
-// variants
+import { BsArrowRight } from "react-icons/bs";
+import Circles from "/components/Circles";
 import { fadeIn } from "../../variants";
 
-// axios
-import axios from "axios";
-import { useState } from "react";
+const api_key = process.env.NEXT_PUBLIC_API;
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -42,7 +35,7 @@ const Contact = () => {
         name: formData.name,
         email: formData.email,
         message: fullMessage,
-        apikey: 'API'
+        apikey: api_key
       });
 
       if (response.data.success) {
@@ -57,6 +50,7 @@ const Contact = () => {
         setFormStatus('Message failed to send.');
       }
     } catch (error) {
+      console.error('Error response:', error.response);
       setFormStatus('An error occurred. Please try again.');
     }
   };
@@ -82,7 +76,7 @@ const Contact = () => {
             onSubmit={handleSubmit}
             className="flex-1 flex flex-col gap-6 w-full mx-auto"
           >
-            <div className="flex gap-x-6 w-full">
+            <div className="flex flex-col sm:flex-row gap-6 w-full">
               <input
                 type="text"
                 name="name"
@@ -90,6 +84,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 className="input"
+                required
               />
               <input
                 type="email"
@@ -99,6 +94,7 @@ const Contact = () => {
                 onChange={handleChange}
                 style={{ textTransform: "none" }}
                 className="input"
+                required
               />
             </div>
             <input
@@ -109,6 +105,7 @@ const Contact = () => {
               onChange={handleChange}
               style={{ textTransform: "none" }}
               className="input"
+              required
             />
             <textarea
               name="message"
@@ -117,6 +114,7 @@ const Contact = () => {
               onChange={handleChange}
               style={{ textTransform: "none" }}
               className="textarea"
+              required
             ></textarea>
             <button
               type="submit"

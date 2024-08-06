@@ -8,13 +8,17 @@ import {
   FaReact,
   FaWordpress,
   FaFigma,
+  FaNodeJs,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
   SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiMongodb,
+  SiExpress,
+  SiJava,
+  SiC,
+  SiPython,
 } from "react-icons/si";
 
 //  about data
@@ -41,7 +45,7 @@ const aboutData = [
     ],
   },
   {
-    title: "Hackathon",
+    title: "Achivement",
     info: [
       {
         title: "HackSphere - Organised by TCB",
