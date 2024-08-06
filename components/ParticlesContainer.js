@@ -1,7 +1,7 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import React, { useCallback } from "react";
-import { Quando } from "@next/font/google";
+import { Quando } from "next/font/google";
 import { color, distance } from "framer-motion";
 
 const ParticlesContainer = () => {
