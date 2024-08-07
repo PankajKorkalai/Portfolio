@@ -19,4 +19,5 @@ This is my personal portfolio website built using modern web technologies. It se
 ## ✨ Features
 - Fully responsive design
 - Interactive project showcase
+- Services section
 - Dynamic and Fully Working contact form
