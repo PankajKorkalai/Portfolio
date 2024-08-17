@@ -19,7 +19,7 @@ const TopLeftImg = () => {
     <div className="absolute left-0 top-0 mix-blend-color-dodge z-10 opacity-50 w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] xl:w-[450px]">
       <Image
         src="/top-left-img.png"
-        width={450} // Ensure width and height maintain the same ratio
+        width={450}
         height={450}
         alt="Decorative Top Left Image"
         className="object-cover"
