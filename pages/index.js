@@ -25,7 +25,7 @@ const Home = () => {
             initial="hidden"
             animate="show"className="h1"
             >
-            Transforming Ides <br /> Into{" "}
+            Transforming Ideas <br /> Into{" "}
             <span className="text-accent"> Digital Reality</span>
           </motion.h1>
           {/* subtitle */}
